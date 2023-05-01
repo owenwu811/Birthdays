@@ -12,11 +12,11 @@
         <div class="container">
             <div class="section">
                 <h2>Add a Birthday</h2>
-                <form action="/" method="post">
-                    <input name="name" placeholder="Name" type="text">
+                <form action="/" method="post">.    <!-- the form action here means we will submit data to the current page. When a user interacts with an html form, they will input data into the name, month, and date fields, and when the user clicks the add button, the form data is submitted to the server as a post request-->
+                    <input name="name" placeholder="Name" type="text">.   <!-- input is an html element that creates a form input field. placeholder attribute provides hint to user in grey text inside box of expected value, and it dissapears when the user types.  name, placeholder, and type are builtin attributes to represent properties. name is the key while text is the value used to store data into the sqllite database. the name key always stays "name" while the value field is changing -->
                     <input name="month" placeholder="Month" type="number" min="1" max="12">
                     <input name="day" placeholder="Day" type="number" min="1" max="31">
-                    <input type="submit" value="Add">
+                    <input type="submit" value="Add">.    <!-- since the value attribute is add, the button will display add. the input type="submit", a button type of submit in html, indicates that the button is a submit button that submits the form to the flask server.
                 </form>
             </div>
             <div class="section">
@@ -30,13 +30,14 @@
                 <tbody>
                 {% for birthday in birthdays %}
                     <tr>
-                        <td>{{ birthday.name }}</td>
-                        <td>{{ birthday.month }}/{{ birthday.day }}</td>
-                    </tr>
-                {% endfor %}
+                        <td>{{ birthday.name }}</td>.                   <!-- inserts name attribute of current birthday object into an html table cell -->
+                        <td>{{ birthday.month }}/{{ birthday.day }}</td>            <!-- / is a seperator between month and day values to display them in a date format -->
+                    </tr>                   <!-- ends the table row in html -->
+                {% endfor %}.             <!--ends the for loop in the jinja2 syntax-->
                 </tbody>
             </table>
         </div>
         </div>
     </body>
 </html>
+
