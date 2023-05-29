@@ -32,4 +32,5 @@ def index():
 
     
     #note that db.execute can be found in docs here: https://cs50.readthedocs.io/libraries/cs50/python/
-    # docs for form element: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form 
+    #docs for form element: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form 
+    #html for input types: https://www.w3schools.com/html/html_form_input_types.asp
