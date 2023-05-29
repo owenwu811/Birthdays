@@ -35,3 +35,6 @@ def index():
     #docs for form element: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form 
     #html for input types: https://www.w3schools.com/html/html_form_input_types.asp
     #submit button with value attribute to change name of button docs: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/submit 
+    #flask's request library attributes can be found here: https://tedboy.github.io/flask/generated/generated/flask.Request.html
+    
+    
