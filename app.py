@@ -29,3 +29,7 @@ def index():
         birthday = db.execute("SELECT * FROM BIRTHDAYS") #db.execute is querying data from birthdays table and saving all rows into empty list variable called birthday
         #bithdays is just creating a list that queries data from the built in sqllite database that is used to store information the users submit via forms
         return render_template("index.html", birthdays=birthday) #we pass birthday list into the render_template function so that Flask can use Jinja2 to generate HTML that displays the data from the birthdays list in a table on the webpage
+
+    
+    #note that db.execute can be found in docs here: https://cs50.readthedocs.io/libraries/cs50/python/
+    
