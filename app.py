@@ -24,7 +24,7 @@ def index():
         month = request.form.get("month")
         db.execute("INSERT INTO birthdays(name, month, day) VALUES(?, ?, ?)", name, month, day) #db.execute is a method in flask that let's you insert a new row into the birthdays table in the birthdays.db database, in this case. ? are used as placeholders and also to prevent sql injection attacks by sanitizing data before it is inserted into the database
         return redirect("/")
-    else:
+    else: #Get Requests
         # TODO: Display the entries in the database on index.html
         birthday = db.execute("SELECT * FROM BIRTHDAYS") #db.execute is querying data from birthdays table and saving all rows into empty list variable called birthday
         #bithdays is just creating a list that queries data from the built in sqllite database that is used to store information the users submit via forms
